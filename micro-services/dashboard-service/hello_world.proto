@@ -15,22 +15,22 @@ syntax = "proto3";
 
 option java_multiple_files = true;
 option java_package = "io.grpc.examples.helloworld";
-option java_outer_classname = "HelloWorldProto";
+option java_outer_classname = "HelloWorld2Proto";
 
 package helloworld;
 
 // The greeting service definition.
 service Greeter {
   // Sends a greeting
-  rpc SayHello (HelloRequest) returns (HelloReply) {}
+  rpc SayHello (HelloRequest2) returns (HelloReply2) {}
 }
 
 // The request message containing the user's name.
-message HelloRequest {
+message HelloRequest2 {
   string name = 1;
 }
 
 // The response message containing the greetings
-message HelloReply {
+message HelloReply2 {
   string message = 1;
 }
